@@ -6,19 +6,19 @@ class Pet < ApplicationRecord
   end
 
   def avg_weight
-    #TODO-implement
+    pet_histories.average(:weight)
   end
 
   def avg_height
-    #TODO-implement
+    pet_histories.average(:height)
   end
 
   def max_weight
-    #TODO-implement
+    pet_histories.pluck(:weight)
   end
 
   def max_height
-    #TODO-implement
+    pet_histories.pluck(:height)
   end
 
 end
