@@ -20,6 +20,7 @@ class PetHistoriesController < ApplicationController
 
   # GET /pet_histories/1/edit
   def edit
+    @pets = Pet.pluck :name, :id
   end
 
   # POST /pet_histories
