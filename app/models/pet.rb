@@ -2,7 +2,7 @@ class Pet < ApplicationRecord
   has_many :pet_histories
 
   def history_count
-    #TODO-implement
+    pet_histories.count
   end
 
   def avg_weight
